@@ -1,0 +1,19 @@
+.itemGrid {
+    display: block;
+}
+.itemGrid .content{
+    text-align: right;
+}
+.itemGrid .searchBox{
+    border: 1px solid #bbbaba;
+    border-radius: 22px;
+    width: 25%;
+    padding: 14px;
+    padding-left: 44px;
+    position: absolute;
+}
+.itemGrid .CategoryBar{
+    text-align: left;
+    margin: 0px 10px;
+
+}

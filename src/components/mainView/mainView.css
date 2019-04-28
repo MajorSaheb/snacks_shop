@@ -1,0 +1,26 @@
+.mainView{
+    
+    background-color: #FFFBFC; 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.mainView .itemGrid{
+    width:80%;
+
+}
+.mainView .sideBar{
+    width:20%;
+
+}
+
+@media screen and (max-width: 600px) {
+    .mainView .itemGrid{
+        width:100%;
+    
+    }
+    .mainView .sideBar{
+        display: none;
+    
+    }
+  }
