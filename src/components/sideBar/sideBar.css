@@ -2,3 +2,21 @@
     width: 100%;
     min-height: 400px;
 }
+.sideBarMain ul{
+    list-style: none;
+    text-align: left;
+
+}
+.sideBarMain ul .priceLabel::before{
+    content: ":"
+}
+.sideBarMain ul .priceLabel{
+    text-align: right;
+}
+.sideBarMain .modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ghostwhite;
+    color: grey;
+}

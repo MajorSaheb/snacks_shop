@@ -55,10 +55,13 @@ onClickAddToCart(e){
         return (
         <Grid key={key} item xs={12} md={4} >
             <div className='itemGrid'>
-                <img src={value.imgurl} />
+                <img src={value.imgurl} alt={value.name}/>
                 <h4>{value.name}</h4>
                 <hr />
                 <div className='content'>
+                    <div className='ingredientsLabel'>
+                        <i>{value.ingredients}</i>
+                    </div>
                     <Button size="small" aria-label="Add" variant="contained" color="secondary" value={key} onClick={(e) => that.onClickAddToCart(e)}>
                         <AddShoppingCart />
                     </Button>

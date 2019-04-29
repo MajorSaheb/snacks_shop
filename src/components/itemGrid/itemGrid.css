@@ -3,6 +3,8 @@
 }
 .itemGrid .content{
     text-align: right;
+    display: flex;
+    justify-content: space-around;
 }
 .itemGrid .searchBox{
     border: 1px solid #bbbaba;
@@ -16,4 +18,7 @@
     text-align: left;
     margin: 0px 10px;
 
+}
+.itemGrid .ingredientsLabel{
+    font-size: 13px;
 }

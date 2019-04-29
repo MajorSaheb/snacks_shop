@@ -13,4 +13,5 @@
     color: #FFFBFC;
     text-align: left;
     padding: 10px;
+    flex-grow: 8;
 }

@@ -8,14 +8,18 @@ class MainView extends Component {
     super();
     this.state={
       item: {},
-      list:[]
+      list:[],
+      cartTotal: 0
     }
   }
 
   onClickAddToCart(newItem) {
+    let temp = this.state.cartTotal + Number(newItem.price)
     this.setState({
-      item: this.state.list.push(newItem)
+      item: this.state.list.push(newItem),
+      cartTotal: temp
     })
+    
   }
 
   render(){
@@ -25,7 +29,7 @@ class MainView extends Component {
             <ItemGrid addToCart={this.onClickAddToCart.bind(this)} />
           </div>
           <div className='sideBar' >
-            <SideBar itemToAdd={this.state.list}/>
+            <SideBar itemToAdd={this.state.list} cartTotal={this.state.cartTotal}/>
           </div>
       </div>
     );
